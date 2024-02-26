@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; 
+            margin: 0;
+            padding: 0;
+            color: green;
+            background-color: black; 
+        }
+
+        header {
+            background-image: url('o.gif'); 
+            background-size: cover; 
+            background-position: center; 
+            color: #00ff00; 
+            padding: 20px;
+            text-align: right; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 16px;
+            transition: transform 0.3s ease;
+        }
+        nav ul li a:hover {
+    transform: translateY(-3px); /* Moving the link upward on hover */
+}
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: #00ff00; 
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .intro, #contact, #education {
+            border-left: 3px solid #333; 
+            padding-left: 20px; 
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+            font-size: 14px; 
+        }
+
+        .skill {
+            display: flex;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace; 
+        }
+
+        .skill-name {
+            width: 100px;
+            color: #00ff00; 
+        }
+
+        .skill-bar {
+            background-color: #333; 
+            height: 20px;
+            border-radius: 10px;
+            margin-left: 10px;
+            flex: 1;
+            position: relative;
+        }
+
+        .skill-bar-fill {
+            background-color: #00ff00; 
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="intro">
+        <img src="PIC.png" alt="Picture">
+        <h3>Catipon, Faith Lyncel Albindo</h3>
+        <p>Hi </p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am studying at Laguna State Polytechnic University in San Pablo City, Laguna. I am taking up BS Information Technology. I am already in my 2nd year of college. I am 22 years old. Due to unfortunate circumstances, I should have been in my 4th year of college, but I had to take a two-year break. I am not very skilled in HTML design, but I will do my best and improve further as needed.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li class="skill">
+                <span class="skill-name">Editor</span> 
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 80%;"></div> 
+                </div>
+            </li>
+            <li class="skill">
+                <span class="skill-name">Networking</span> 
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 75%;"></div> 
+                </div>
+            </li>
+            <li class="skill">
+                <span class="skill-name">Programing Language</span> 
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 40%;"></div> 
+                </div>
+            </li>
+            <li class="skill">
+                <span class="skill-name">Data Visualization</span> 
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 35%;"></div> 
+                </div>
+            </li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Address: Blck.31 Lt.45 Phirst ParkHome San Pablo City Laguna 4000</p>
+        <p>Email: 0322-1811@lspu.edu.ph</p>
+        <p>Phone: 0949-814-2266</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>University Name: Laguna State Polytechnic University of San Pablo City</p>
+        <p>Major: Bachelor of Science Information Technology</p>
+        <p>Expected Graduation Date: 2024-2025</p>
+    </section>
+</body>
+</html>
